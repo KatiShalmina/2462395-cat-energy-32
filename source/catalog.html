@@ -48,7 +48,11 @@
       <ul class="main-catalog__list">
         <li class="main-catalog__item main-product">
           <a class="main-product__link" href="#" tabindex="-1">
-            <img class="main-product__image" src="images/cat-energy-pro-500-chiken.png" width="140" height="107" alt="Cat energy Pro 500 грамм с курицей.">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1140px)" srcset="images/chiken-500-desktop@1x.png 1x, images/chiken-500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chiken-500-tablet@1x.png 1x, images/chiken-500-tablet@2x.png 2x">
+              <img class="main-product__image" src="images/chiken-500-mobile@1x.png" srcset="images/chiken-500-mobile@2x.png 2x" width="140" height="107" alt="Cat energy Pro 500 грамм с курицей.">
+            </picture>
           </a>
           <a class="main-product__title-link" href="#" tabindex="-1">
             <h3 class="main-product__title">Cat Energy Pro 500 г</h3>
