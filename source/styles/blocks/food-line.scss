@@ -1,3 +1,12 @@
 .food-line {
+  background-color: $bg-basic-grey;
+}
 
+.food-line__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $base-color-title-primary;
+  text-transform: uppercase;
 }

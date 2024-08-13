@@ -1,19 +1,24 @@
-.contacts {
+// .contacts {
 
-}
+// }
 
-.contacts__text-wrapper {
+// .contacts__text-wrapper {
 
-}
+// }
 
 .contacts__message {
-
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
 }
 
 .contacts__address {
-
+  font-style: normal;
+  line-height: 20px;
 }
 
-.contacts__map {
+// .contacts__map {
 
-}
+// }

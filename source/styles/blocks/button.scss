@@ -1,11 +1,14 @@
 .button {
-
-}
-
-.button--primary {
-
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color-title-secondary;
+  background-color: $bg-basic-green;
+  text-transform: uppercase;
 }
 
 .button--secondary {
-
+  line-height: 16px;
+  color: $base-color-title-primary;
+  background-color: $bg-basic-grey;
 }

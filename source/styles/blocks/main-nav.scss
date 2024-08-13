@@ -1,15 +1,19 @@
-.main-nav {
+// .main-nav {
 
-}
+// }
 
 .main-nav__list {
-
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .main-nav__link {
-
+  font-family: $secondary-font;
+  color: $base-color-title-primary;
+  text-transform: uppercase;
 }
 
-.main-nav__link--current {
+// .main-nav__link--current {
 
-}
+// }
