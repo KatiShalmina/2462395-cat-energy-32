@@ -3,12 +3,10 @@
 // }
 
 .statistics__data {
-  font-family: $secondary-font;
+  @include oswald-uppercase;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: $base-color-title-primary;
-  text-transform: uppercase;
 }
 
 .statistics__definition {

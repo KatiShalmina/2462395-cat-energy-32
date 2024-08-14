@@ -3,15 +3,13 @@
 // }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  @include reset-list;
 }
 
 .main-nav__link {
-  font-family: $secondary-font;
-  color: $base-color-title-primary;
-  text-transform: uppercase;
+  @include oswald-uppercase;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 // .main-nav__link--current {

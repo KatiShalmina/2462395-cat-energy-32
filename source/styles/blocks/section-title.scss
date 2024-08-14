@@ -1,7 +1,5 @@
 .section-title {
-  font-family: $secondary-font;
+  @include oswald-400;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
-  color: $base-color-title-primary;
 }

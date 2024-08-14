@@ -1,20 +1,11 @@
 .hero {
-  background-color: $bg-basic-green;
+  background-color: $bg-primary;
 }
 
 .hero__slogan {
-  font-family: $secondary-font;
+  @include oswald-uppercase;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: $base-color-title-secondary;
-  text-transform: uppercase;
+  color: $color-primary;
 }
-
-// .hero__img {
-
-// }
-
-// .hero__button {
-
-// }

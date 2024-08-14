@@ -1,12 +1,14 @@
 .food-line {
-  background-color: $bg-basic-grey;
+  background-color: $bg-secondary;
 }
 
 .food-line__title {
-  font-family: $secondary-font;
+  @include oswald-uppercase;
+  @include oswald-400;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 400;
-  color: $base-color-title-primary;
-  text-transform: uppercase;
+}
+
+.food-line__button {
+  line-height: 16px;
 }

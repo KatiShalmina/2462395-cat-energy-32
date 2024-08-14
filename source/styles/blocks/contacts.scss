@@ -7,18 +7,13 @@
 // }
 
 .contacts__message {
-  font-family: $secondary-font;
+  @include oswald-uppercase;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  text-transform: uppercase;
 }
 
 .contacts__address {
   font-style: normal;
   line-height: 20px;
 }
-
-// .contacts__map {
-
-// }

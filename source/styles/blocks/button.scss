@@ -1,14 +1,17 @@
 .button {
-  font-family: $secondary-font;
+  @include oswald-uppercase;
   font-size: 16px;
   line-height: 20px;
-  color: $base-color-title-secondary;
-  background-color: $bg-basic-green;
-  text-transform: uppercase;
+  color: $color-primary;
+  background-color: $bg-primary;
+  border: none;
 }
 
 .button--secondary {
-  line-height: 16px;
-  color: $base-color-title-primary;
-  background-color: $bg-basic-grey;
+  color: $color-secondary;
+  background-color: $bg-secondary;
+}
+
+.button--show-more {
+  color: $color-base;
 }
