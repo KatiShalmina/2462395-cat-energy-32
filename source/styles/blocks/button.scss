@@ -2,13 +2,15 @@
   @include oswald-uppercase;
   font-size: 16px;
   line-height: 20px;
-  color: $color-primary;
-  background-color: $bg-primary;
   border: none;
 }
 
+.button--primary {
+  color: $color-primary;
+  background-color: $bg-primary;
+}
+
 .button--secondary {
-  color: $color-secondary;
   background-color: $bg-secondary;
 }
 
