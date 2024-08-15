@@ -1,3 +1,38 @@
 .social {
   @include reset-list;
+  display: flex;
+  gap: 14px;
+}
+
+.social__link--vk {
+  @include mask;
+  display: block;
+  width: 38px;
+  height: 32px;
+  mask-image: url("../../icons/stack.svg#vk-icon");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social__link--youtube {
+  @include mask;
+  display: block;
+  width: 38px;
+  height: 32px;
+  mask-image: url("../../icons/stack.svg#youtube-icon");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social__link--telegram {
+  @include mask;
+  display: block;
+  width: 38px;
+  height: 32px;
+  mask-image: url("../../icons/stack.svg#telegram-icon");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }

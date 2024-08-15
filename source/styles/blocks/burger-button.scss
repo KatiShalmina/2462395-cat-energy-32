@@ -1,3 +1,10 @@
-// .burger-button {
-
-// }
+.burger-button {
+  @include opacity-link;
+  width: 25px;
+  height: 25px;
+  background-image: url("../../icons/stack.svg#burger-button");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}

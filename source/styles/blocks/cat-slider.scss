@@ -1,3 +1,17 @@
-// .cat-slider {
+.cat-slider {
+  position: relative;
+}
 
-// }
+.cat-slider__toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-image: url("../../icons/stack.svg#slider-toggle");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}

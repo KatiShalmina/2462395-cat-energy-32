@@ -12,3 +12,17 @@
 .food-line__button {
   line-height: 16px;
 }
+
+.food-line--lose {
+  background-image: url("../../icons/stack.svg#background-cat-slim");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  background-position: 20px 21px;
+}
+
+.food-line--gain {
+  background-image: url("../../icons/stack.svg#background-cat-pro");
+  background-size: 67px 50px;
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+}
