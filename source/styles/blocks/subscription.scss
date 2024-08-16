@@ -4,6 +4,7 @@
 
 .subscription__input {
   @include oswald-uppercase;
+  @include input;
   font-size: 20px;
   color: $color-base;
 }

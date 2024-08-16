@@ -16,5 +16,6 @@
 }
 
 .button--show-more {
+  @include button(background-color 0.4s ease, color 0.4s ease, #ebebeb, rgba(68, 68, 68, 0.3));
   color: $color-base;
 }

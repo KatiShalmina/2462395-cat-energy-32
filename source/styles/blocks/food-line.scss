@@ -10,13 +10,14 @@
 }
 
 .food-line__button {
+  @include arrow;
   display: flex;
-  width: 126px;
+  width: 134px;
   line-height: 16px;
   background-image: url("../../icons/stack.svg#arrow-button");
   background-size: 32px 10px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 102px center;
 }
 
 .food-line--lose {
