@@ -10,7 +10,13 @@
 }
 
 .food-line__button {
+  display: flex;
+  width: 126px;
   line-height: 16px;
+  background-image: url("../../icons/stack.svg#arrow-button");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .food-line--lose {

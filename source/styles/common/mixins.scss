@@ -26,7 +26,7 @@
   text-transform: $text-transform;
 }
 
-@mixin mask ($link: #666666, $transition: background-color 0.4s ease, $hover: #68b738, $active: rgba(104, 183, 56, 0.3)) {
+@mixin mask($link: #666666, $transition: background-color 0.4s ease, $hover: #68b738, $active: rgba(104, 183, 56, 0.3)) {
   & {
       background-color: $link;
       transition: $transition;
@@ -39,7 +39,7 @@
   }
 }
 
-@mixin opacity-link ($transition: opacity 0.4s ease, $hover: 0.6, $active: 0.3) {
+@mixin opacity($transition: opacity 0.4s ease, $hover: 0.6, $active: 0.3) {
   & {
       transition: $transition;
       &:hover, &:focus-visible {
@@ -51,14 +51,17 @@
   }
 }
 
-@mixin opacity-logo ($transition: opacity 0.4s ease, $hover: 0.8, $active: 0.6) {
+@mixin button($bg-transition: background-color 0.4s ease, $color-transition: color 0.4s ease, $bg-hover: #5eaa2f, $color-active: rgba(255, 255, 255, 0.3)) {
   & {
-      transition: $transition;
-      &:hover, &:focus-visible {
-        opacity: $hover;
+      transition:
+        $bg-transition,
+        $color-transition;
+      &:hover, &:focus-visible, &:active {
+        background-color: $bg-hover;
       }
       &:active {
-        opacity: $active;
+        color: $color-active;
       }
   }
 }
+

@@ -6,6 +6,7 @@
 }
 
 .button--primary {
+  @include button;
   color: $color-primary;
   background-color: $bg-primary;
 }
