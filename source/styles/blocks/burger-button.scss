@@ -2,7 +2,8 @@
   @include opacity;
   width: 25px;
   height: 25px;
-  background-image: url("../../icons/stack.svg#burger-button-close");
+  background-color: $bg-base;
+  background-image: url("../../icons/stack.svg#burger-button");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
