@@ -3,10 +3,11 @@
 // }
 
 .statistics__data {
-  @include oswald-uppercase;
+  @include title;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .statistics__definition {
