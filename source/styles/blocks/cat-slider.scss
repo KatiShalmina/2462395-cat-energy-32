@@ -2,63 +2,22 @@
   position: relative;
 }
 
-.cat-slider__toggle {
+.cat-slider__curtain {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1;
   transform: translate(-50%, -50%);
+  display: block;
   width: 40px;
-  height: 40px;
-  background-color: $bg-base;
-  border: 2px solid #666666;
-  border-radius: 50%;
+  height: 256px;
+  color: #666666;
+  border: none;
+  transition: color 0.4s ease;
   cursor: pointer;
-  transition: border-color 0.4s ease;
   &:hover {
-    border-color: $bg-primary;
+    color: $bg-primary;
   }
   &:active {
-    border-color: #9ecc82;
+    color: #9ecc82;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    width: 4px;
-    height: 256px;
-    background-color: #666666;
-    border-radius: 2px;
-    transition: background-color 0.4s ease;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 24px;
-    height: 18px;
-    background-color: #666666;
-    mask-image: url("../../icons/stack.svg#slider-handle");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    border: none;
-    transition: background-color 0.4s ease;
-  }
-}
-
-.cat-slider__toggle:hover::before,
-.cat-slider__toggle:focus-visible::before,
-.cat-slider__toggle:hover::after,
-.cat-slider__toggle:focus-visible::after {
-  background-color: $bg-primary;
-}
-
-.cat-slider__toggle:active::before,
-.cat-slider__toggle:active::after {
-  background-color: #9ecc82;
 }
