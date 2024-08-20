@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.cat-slider__toggle {
+  border: none;
+  background-color: transparent;
+}
+
 .cat-slider__curtain {
   position: absolute;
   top: 50%;
