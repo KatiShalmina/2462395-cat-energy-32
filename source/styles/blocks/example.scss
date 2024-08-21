@@ -1,3 +1,13 @@
 .example {
+  padding: 25px 20px 40px;
   background-color: #eaeaea;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
 }

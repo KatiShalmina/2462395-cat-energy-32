@@ -14,21 +14,23 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__trademark" src="images/logo-trademark-mobile.svg" width="33" height="38" alt="Логотип компании">
-      </picture>
-      <picture>
-        <source media="(min-width: 768px)" srcset="images/logo-caption-tablet.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__caption" src="images/logo-caption-mobile.svg" width="101" height="18" alt="Кэт энерджи.">
-      </picture>
-    </a>
-    <nav class="main-header__navigation main-nav">
-      <button class="main-nav__toggle burger-button" type="button">
+    <div class="main-header__logo-wrapper">
+      <a class="main-header__logo logo" href="index.html" aria-current="page">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__trademark" src="images/logo-trademark-mobile.svg" width="33" height="38" alt="Логотип компании">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/logo-caption-tablet.svg" width="101" height="18" type="image/svg+xml">
+          <img class="logo__caption" src="images/logo-caption-mobile.svg" width="101" height="18" alt="Кэт энерджи.">
+        </picture>
+      </a>
+      <button class="main-header__navigation-toggle burger-button" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
+    </div>
+    <nav class="main-header__navigation main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
@@ -60,22 +62,20 @@
       <a class="hero__button button button--primary" href="#">Подобрать программу</a>
     </section>
     <section class="diet">
-      <div class="diet__wrapper">
-        <h2 class="visually-hidden">Режимы питания</h2>
-        <div class="diet__food-line food-line food-line--lose">
-          <h3 class="food-line__title">Похудение</h3>
-          <p class="food-line__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="food-line__button button button--secondary" href="#">
-            Каталог Slim
-          </a>
-        </div>
-        <div class="diet__food-line food-line food-line--gain">
-          <h3 class="food-line__title">Набор массы</h3>
-          <p class="food-line__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="food-line__button button button--secondary" href="#">
-            Каталог Pro
-          </a>
-        </div>
+      <h2 class="visually-hidden">Режимы питания</h2>
+      <div class="diet__food-line food-line food-line--lose">
+        <h3 class="food-line__title">Похудение</h3>
+        <p class="food-line__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="food-line__button button button--secondary" href="#">
+          Каталог Slim
+        </a>
+      </div>
+      <div class="diet__food-line food-line food-line--gain">
+        <h3 class="food-line__title">Набор массы</h3>
+        <p class="food-line__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="food-line__button button button--secondary" href="#">
+          Каталог Pro
+        </a>
       </div>
     </section>
     <section class="function">
@@ -134,43 +134,43 @@
         <p class="contacts__message">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="contacts__map map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с локацией компании.">
-      </picture>
+      <div class="contacts__map map">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с локацией компании.">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <a class="main-footer__logo logo" href="index.html" aria-current="page">
-        <img class="logo__caption" src="images/logo-caption-mobile.svg" width="128" height="24" alt="Логотип компании Кэт энерджи.">
+    <a class="main-footer__logo logo" href="index.html" aria-current="page">
+      <img class="logo__caption" src="images/logo-caption-mobile.svg" width="128" height="24" alt="Логотип компании Кэт энерджи.">
+    </a>
+    <ul class="main-footer__social-list social">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Перейти во ВКонтакте.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Перейти в YouTube.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Перейти в Telegram.</span>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__developer developer">
+      <a class="developer__link developer__link--caption" href="https://htmlacademy.ru/intensive/adaptive" tabindex="-1">
+        <span class="visually-hidden">Перейти на сайт HTML Academy</span>
       </a>
-      <ul class="main-footer__social-list social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Перейти во ВКонтакте.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Перейти в YouTube.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Перейти в Telegram.</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__developer developer">
-        <a class="developer__link developer__link--caption" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Перейти на сайт HTML Academy</span>
-        </a>
-        <a class="developer__link developer__link--icon" href="https://htmlacademy.ru/intensive/adaptive" tabindex="-1">
-          <span class="visually-hidden">на интенсивный курс по адаптивной вёрстке и автоматизации.</span>
-        </a>
-      </div>
+      <a class="developer__link developer__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">на интенсивный курс по адаптивной вёрстке и автоматизации.</span>
+      </a>
     </div>
   </footer>
 </body>

@@ -1,11 +1,12 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
   background-color: $bg-secondary;
 }
 
-// .main-footer__wrapper {
-
-// }
-
-// .main-footer__logo {
-
-// }
+.main-footer__logo {
+  padding-bottom: 20px;
+}

@@ -5,7 +5,7 @@
 
 .food-line__title {
   @include title;
-  margin: 10px 0 70px 29px;
+  margin: 10px 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -13,8 +13,8 @@
 
 .food-line__description {
   margin: 0;
-  padding-bottom: 23px;
   margin-bottom: 15px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -36,13 +36,14 @@
   @include opacity(opacity 0.4s ease, 1, 0.3);
   display: flex;
   align-items: center;
+  padding: 4px 0;
   line-height: 16px;
 }
 
 .food-line__button::after {
   content: "";
   width: 32px;
-  height: 10px;
+  height: 24px;
   margin-left: 15px;
   background-image: url("../../icons/stack.svg#arrow-button");
   background-size: 24px 10px;

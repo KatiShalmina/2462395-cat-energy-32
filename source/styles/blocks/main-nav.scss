@@ -1,6 +1,9 @@
-// .main-nav {
-
-// }
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .main-nav__list {
   @include reset-list;
@@ -9,11 +12,11 @@
 .main-nav__link {
   @include title;
   @include opacity;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
 }
-
-// .main-nav__link--current {
-
-// }

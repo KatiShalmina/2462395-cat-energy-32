@@ -1,6 +1,10 @@
-// .main-catalog {
+.main-catalog {
+  padding: 27px 20px 24px;
+}
 
-// }
+.main-catalog__title {
+  margin-bottom: 41px;
+}
 
 .main-catalog__list {
   @include reset-list;

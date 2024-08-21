@@ -1,16 +1,35 @@
-.main-product--show-more {
-  text-align: center;
+.main-product {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-areas:
+    "image title"
+    "image settings"
+    "button button";
+}
+
+.main-product__title-link {
+  @include opacity;
 }
 
 .main-product__title {
   @include title("Oswald", 400, #222222);
+  margin: 0;
+  grid-area: title;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.main-product__title-link {
-  @include opacity;
+.main-product__image {
+  grid-area: image;
+}
+
+.main-product__button {
+  grid-area: button;
+}
+
+.main-product--show-more {
+  text-align: center;
 }
 
 .main-product__title--show-more {

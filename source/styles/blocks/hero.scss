@@ -1,9 +1,16 @@
 .hero {
-  background-color: $bg-primary;
+  padding: 27px 20px 20px;
+  background-image: linear-gradient(to bottom, $bg-primary 58%, $bg-base 58%);
+}
+
+.hero__title {
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
   @include title;
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
