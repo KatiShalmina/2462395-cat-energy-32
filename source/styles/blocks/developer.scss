@@ -11,11 +11,24 @@
 }
 
 .developer__link--icon {
-  @include mask;
-  display: block;
-  width: 37px;
-  height: 34px;
-  mask-image: url("../../icons/stack.svg#developer-logo-icon");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 34px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#developer-logo-icon");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.4s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-primary;
+  }
+
+  &:active::after {
+    background-color: #d2e9c3;
+  }
 }
