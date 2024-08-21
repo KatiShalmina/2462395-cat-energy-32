@@ -12,6 +12,7 @@
 }
 
 .function__item::before {
+  flex-shrink: 0;
   content: "";
   width: 60px;
   height: 60px;
