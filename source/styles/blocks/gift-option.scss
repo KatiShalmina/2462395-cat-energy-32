@@ -6,9 +6,13 @@
   text-align: center;
   min-height: 90px;
   color: $color-primary;
-  background-color: $bg-primary;
+  background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../../icons/stack.svg#icon-gift");
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center 59px;
+}
+
+.gift-option__description {
+  margin: 0 auto;
 }

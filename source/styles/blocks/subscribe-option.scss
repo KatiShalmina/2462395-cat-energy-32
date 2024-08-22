@@ -1,9 +1,19 @@
 .subscribe-option {
+  padding: 20px 20px 40px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   color: $color-secondary;
+}
+
+.subscribe-option__title {
+  margin-bottom: 32px;
+}
+
+.subscribe-option__description {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .subscription__button {

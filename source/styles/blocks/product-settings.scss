@@ -6,9 +6,14 @@
   line-height: 16px;
 }
 
-// .product-settings__data {
+.product-settings__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
-// }
+.product-settings__wrapper:last-child {
+  margin-bottom: 4px;
+}
 
 .product-settings__definition {
   margin: 0;
