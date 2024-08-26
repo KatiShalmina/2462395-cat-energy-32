@@ -2,11 +2,14 @@
   padding: 13px 20px 0;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+  justify-content: space-between;
     padding: 25px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
+    background-image: linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%);
   }
 }
 
@@ -14,6 +17,10 @@
   display: flex;
   align-items: center;
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .main-header__navigation-toggle {

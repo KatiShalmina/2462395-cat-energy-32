@@ -3,10 +3,10 @@
   grid-template-columns: 140px 1fr;
   grid-template-rows: 1fr 14px auto 17px;
   grid-template-areas:
-    "image title"
-    "image ."
-    "image settings"
-    ". ."
+    "image  title"
+    "image  ."
+    "image  settings"
+    ".      ."
     "button button";
   padding: 20px 0 25px;
 }
