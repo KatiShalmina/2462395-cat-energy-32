@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 18px;
+    padding: 5px 0;
+  }
 }
 
 .developer__link--caption {
@@ -25,6 +30,7 @@
     background-color: #666666;
     mask-image: url("../../icons/stack.svg#developer-logo-icon");
     mask-repeat: no-repeat;
+    mask-size: 27px 34px;
     mask-position: center;
     transition: background-color 0.4s ease;
   }

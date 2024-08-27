@@ -96,30 +96,36 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title section-title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__statistics statistics">
-        <dl class="statistics__list">
-          <div class="statistics__item">
-            <dt class="statistics__data">5 кг</dt>
-            <dd class="statistics__definition">снижение веса</dd>
-          </div>
-          <div class="statistics__item">
-            <dt class="statistics__data">60 дней</dt>
-            <dd class="statistics__definition">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="statistics__data statistics__data--total">затраты на питание: 15 000 руб.</p>
+      <div class="example__wrapper">
+        <h2 class="example__title section-title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__statistics statistics">
+          <dl class="statistics__list">
+            <div class="statistics__item">
+              <dt class="statistics__data">5 кг</dt>
+              <dd class="statistics__definition">снижение веса</dd>
+            </div>
+            <div class="statistics__item">
+              <dt class="statistics__data">60 дней</dt>
+              <dd class="statistics__definition">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="statistics__data statistics__data--total"><span>затраты на питание:</span> <span>15 000 руб.</span></p>
+        </div>
       </div>
       <div class="example__weight-change cat-slider">
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-fat-tablet@1x.png 1x, images/slider-fat-tablet@2x.png 2x">
-          <img class="cat-slider__image cat-slider__image--fat" src="images/slider-fat-mobile@1x.png" srcset="images/slider-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот с избыточным весом.">
-        </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-skinny-tablet@1x.png 1x, images/slider-skinny-tablet@2x.png 2x">
-          <img class="cat-slider__image cat-slider__image--skinny" src="images/slider-skinny-mobile@1x.png" srcset="images/slider-skinny-mobile@2x.png 2x" width="280" height="256" alt="Болезненно худой кот.">
-        </picture>
+        <div class="example__fat-cat-wrapper">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-fat-tablet@1x.png 1x, images/slider-fat-tablet@2x.png 2x">
+            <img class="cat-slider__image cat-slider__image--fat" src="images/slider-fat-mobile@1x.png" srcset="images/slider-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот с избыточным весом.">
+          </picture>
+        </div>
+        <div class="example__skinny-cat-wrapper">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-skinny-tablet@1x.png 1x, images/slider-skinny-tablet@2x.png 2x">
+            <img class="cat-slider__image cat-slider__image--skinny" src="images/slider-skinny-mobile@1x.png" srcset="images/slider-skinny-mobile@2x.png 2x" width="280" height="256" alt="Болезненно худой кот.">
+          </picture>
+        </div>
         <button class="cat-slider__toggle" type="button">
           <span class="visually-hidden">Изменить внешний вид кота.</span>
           <svg class="cat-slider__curtain" width="40" height="256">
@@ -132,7 +138,10 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__text-wrapper">
         <p class="contacts__message">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address address">
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__city">Санкт-Петербург</p>
+        </address>
       </div>
       <div class="contacts__map map">
         <picture>
