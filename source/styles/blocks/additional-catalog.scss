@@ -1,5 +1,20 @@
 .additional-catalog {
   padding: 25px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 110px;
+  }
+}
+
+.additional-catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-catalog__title {

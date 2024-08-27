@@ -1,11 +1,13 @@
 .main-nav__list {
   @include reset-list;
-  display: flex;
+  position: relative;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 436px;
@@ -14,6 +16,17 @@
   @media (min-width: $desktop-width) {
     width: 475px;
   }
+}
+
+.main-nav__list--nojs {
+  display: flex;
+}
+
+.main-nav__list--open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $bg-base;
 }
 
 .main-nav__link {
@@ -37,5 +50,9 @@
     font-size: 20px;
     line-height: 30px;
     color: $color-primary;
+
+    &--catalog {
+      color: $color-secondary;
+    }
   }
 }

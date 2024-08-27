@@ -11,6 +11,11 @@
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center 59px;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+  }
 }
 
 .gift-option__description {

@@ -13,6 +13,12 @@
   }
 }
 
+.main-header--catalog {
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
 .main-header__logo-wrapper {
   display: flex;
   align-items: center;
