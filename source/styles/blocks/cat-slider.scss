@@ -25,3 +25,19 @@
     color: #9ecc82;
   }
 }
+
+.cat-slider__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.cat-slider__image--fat {
+  position: relative;
+}
+
+.cat-slider__image--skinny {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

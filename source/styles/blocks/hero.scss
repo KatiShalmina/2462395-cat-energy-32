@@ -8,14 +8,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    min-height: 580px;
-    padding: 110px 110px 82px 190px;
+    display: grid;
+    grid-template-columns: 447px auto;
+    grid-auto-flow: row dense;
+    justify-items: start;
+    align-items: start;
+    padding: 29px 110px 52px;
     background-image: linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%);
   }
 }
 
 .hero__title {
+  margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +29,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 81px;
+    margin-right: -47px;
+    margin-left: 80px;
   }
 }
 
@@ -48,7 +56,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 241px;
+    margin-left: 80px;
   }
 }
 
@@ -57,9 +68,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 32px;
-    left: 557px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
 }
 
@@ -74,7 +84,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 342px;
-    left: 190px;
+    position: static;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 313px;
+    margin-left: 80px;
   }
 }

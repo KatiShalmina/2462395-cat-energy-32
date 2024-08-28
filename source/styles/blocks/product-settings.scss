@@ -1,8 +1,6 @@
 .product-settings {
   grid-column: 2 / 3;
   display: grid;
-  width: 140px;
-  margin: 0;
   font-size: 12px;
   line-height: 16px;
 
@@ -10,7 +8,6 @@
     width: 250px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,14 +22,6 @@
   @media (min-width: $tablet-width) {
     padding: 5px 0;
     border-bottom: 1px solid #cdcdcd;
-  }
-}
-
-.product-settings__wrapper:last-child {
-  margin-bottom: 4px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
   }
 }
 

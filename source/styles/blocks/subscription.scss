@@ -1,7 +1,7 @@
 .subscription {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -13,7 +13,7 @@
 .subscription__input {
   @include title;
   @include input;
-  padding: 13px;
+  padding: 12px;
   font-size: 20px;
   line-height: 30px;
   color: $color-base;
@@ -31,7 +31,7 @@
 .subscription__button {
   cursor: pointer;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 256px;
   }
 }

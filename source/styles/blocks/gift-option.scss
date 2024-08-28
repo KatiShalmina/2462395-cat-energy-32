@@ -1,6 +1,5 @@
 .gift-option {
   padding: 187px 61px 43px 58px;
-  flex-direction: column;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -12,9 +11,18 @@
   background-repeat: no-repeat;
   background-position: center 59px;
 
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+    background-size: 80px 83px;
+    background-position: 77px center;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
     width: 245px;
-    height: 288px;
+    text-align: center;
+    background-position: center 56px;
   }
 }
 

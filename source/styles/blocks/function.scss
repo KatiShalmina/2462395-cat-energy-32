@@ -11,6 +11,7 @@
 }
 
 .function__title {
+  margin: 0;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -47,13 +48,13 @@
     gap: 31px;
     width: 343px;
     align-items: start;
-    counter-increment: function;
+    counter-increment: counter;
 
     &::after {
       position: absolute;
       top: -40px;
       left: 112px;
-      content: counter(function);
+      content: counter(counter);
       font-family: $secondary-font;
       font-size: 280px;
       line-height: 280px;
