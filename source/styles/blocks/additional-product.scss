@@ -1,6 +1,11 @@
 .additional-product {
   padding: 13px 0 19px;
   line-height: 14px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.additional-product:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .additional-product__title {

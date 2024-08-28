@@ -9,12 +9,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 33px;
     width: 436px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 477px;
   }
 }
 
@@ -38,11 +38,13 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     padding: 14px 0 12px;
     font-size: 18px;
     line-height: 24px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
