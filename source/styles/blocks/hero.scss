@@ -11,8 +11,7 @@
     display: grid;
     grid-template-columns: 447px auto;
     grid-auto-flow: row dense;
-    justify-items: start;
-    align-items: start;
+    place-items: start start;
     padding: 29px 110px 52px;
     background-image: linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%);
   }
