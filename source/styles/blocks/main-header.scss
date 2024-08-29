@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     padding: 25px 30px 0;
   }
 
@@ -29,10 +30,6 @@
   }
 }
 
-.main-header__navigation-toggle {
-  margin-left: auto;
-}
-
 .main-header__logo .logo__caption {
   margin-left: 56px;
 
@@ -44,3 +41,18 @@
     margin-left: 14px;
   }
 }
+
+.main-header__navigation-toggle {
+  display: block;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__navigation-toggle--nojs {
+  display: none;
+}
+
+

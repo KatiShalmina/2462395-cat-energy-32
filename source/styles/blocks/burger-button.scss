@@ -1,6 +1,5 @@
 .burger-button {
   @include opacity;
-  display: block;
   width: 25px;
   height: 25px;
   background-color: transparent;
@@ -9,16 +8,8 @@
   background-position: center;
   border: none;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .burger-button--close {
   background-image: url("../../icons/stack.svg#burger-button-close");
-}
-
-.burger-button--nojs {
-  display: none;
 }

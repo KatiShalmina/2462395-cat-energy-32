@@ -1,14 +1,14 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   @include reset-list;
-  position: relative;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 33px;
     width: 436px;
   }
@@ -19,13 +19,19 @@
 }
 
 .main-nav__list--nojs {
-  display: flex;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__list--open {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
+  right: -20px;
+  display: block;
   background-color: $bg-base;
 }
 
