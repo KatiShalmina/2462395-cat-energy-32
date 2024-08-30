@@ -1,8 +1,7 @@
 .main-product {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 20px 0 25px;
+  padding: 19px 0 25px;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
@@ -17,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-top: 8px;
     padding-right: 38px;
     padding-left: 38px;
   }
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
 }
 
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 12px;
+    padding-bottom: 13px;
   }
 }
 
@@ -73,10 +73,11 @@
 }
 
 .main-product__list {
-  margin-bottom: 4px;
+  @include reset-list;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 }
 
@@ -85,32 +86,47 @@
 }
 
 .main-product--show-more {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  padding-bottom: 24px;
   text-align: center;
   background-image: url("../../icons/stack.svg#cross-icon");
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  background-position: center 25px;
+  background-position: center 24px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    min-height: 429px;
+    margin-top: 82px;
+    padding-top: 8px;
+    padding-bottom: 38px;
+    background-image: url("../../icons/stack.svg#cross-icon-tablet");
     background-size: 60px 60px;
-    background-position: center 132px;
+    background-position: center 48px;
+    border: 2px solid $bg-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 431px;
+    margin-top: 80px;
   }
 }
 
 .main-product__title--show-more {
   width: 280px;
   margin: 53px auto 8px;
-  text-align: center;
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin: 232px auto 0;
+    margin: 150px auto 23px;
     width: 134px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 140px;
+    margin-bottom: 26px;
   }
 }
 
@@ -121,8 +137,12 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    margin: 6px 0 82px;
+    margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
   }
 }
