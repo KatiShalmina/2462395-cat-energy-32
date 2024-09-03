@@ -65,3 +65,11 @@
   grid-column: 1 / 5;
   grid-row: 1 / 2;
 }
+
+.contacts iframe {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  display: block;
+  width: 100%;
+  border: none;
+}

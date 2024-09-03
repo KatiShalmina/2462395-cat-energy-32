@@ -1,6 +1,9 @@
 .main-footer {
-  padding: 40px 20px;
   background-color: $bg-secondary;
+}
+
+.main-footer__wrapper {
+  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,7 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 63px 0;
   }
 }
 

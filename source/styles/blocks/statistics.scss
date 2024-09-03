@@ -10,10 +10,9 @@
 }
 
 .statistics__list {
+  @include reset-list;
   display: flex;
-  justify-content: space-between;
   gap: 32px;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
@@ -26,45 +25,50 @@
 }
 
 .statistics__item {
-  margin-bottom: 20px;
-  padding: 15px 20px 0;
+  position: relative;
+  margin-bottom: 34px;
   width: 124px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
-    padding: 15px 18px 0;
+    margin-bottom: 104px;
     width: 162px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }
 
 .statistics__data {
   @include title;
-  margin-bottom: 8px;
+  padding: 14px 42px 17px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 11px;
+    padding: 14px 56px 19px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .statistics__definition {
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 77px;
   margin: 0;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    top: 63px;
     font-size: 14px;
     line-height: 14px;
   }
@@ -73,8 +77,10 @@
 .statistics__data--total {
   margin: 0;
   margin-bottom: 20px;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 174px;

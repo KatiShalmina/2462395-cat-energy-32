@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 41px 0;
   }
 }
 
@@ -18,11 +20,12 @@
 }
 
 .additional-catalog__title {
+  position: relative;
   margin: 0;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin: 0 0 80px 40px;
   }
 }
 
@@ -40,4 +43,30 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
   }
+}
+
+.additiona-catalog__title::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: $bg-primary;
+  }
+}
+
+.additiona-catalog__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: $bg-primary;
 }

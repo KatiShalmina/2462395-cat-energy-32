@@ -1,21 +1,32 @@
 .example {
-  padding: 25px 20px 40px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 30px 101px;
     background-image: linear-gradient(to bottom, $bg-base 57%, #eaeaea 57%);
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 55px 110px 75px;
     background-image: linear-gradient(to bottom, $bg-base 29%, #eaeaea 29%);
   }
 }
 
 .example__wrapper {
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 55px 0 75px;
+  }
+}
+
+.example__text-wrapper {
   @media (min-width: $desktop-width) {
     width: 436px;
   }
