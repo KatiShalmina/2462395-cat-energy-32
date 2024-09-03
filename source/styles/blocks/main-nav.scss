@@ -30,9 +30,10 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 0;
-    left: -20px;
-    right: -20px;
+    left: 0;
+    right: -1px;
     display: block;
+    min-height: 198px;
     background-color: $bg-base;
   }
 }
@@ -79,7 +80,7 @@
     background-color: $bg-primary;
   }
 
-  @media (mix-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     background-color: $bg-base;
   }
 }
