@@ -1,7 +1,7 @@
 .main-product {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 19px 0 25px;
+  padding: 19px 20px 25px;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {

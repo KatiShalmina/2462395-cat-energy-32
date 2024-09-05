@@ -25,7 +25,6 @@
 }
 
 .statistics__item {
-  position: relative;
   margin-bottom: 34px;
   width: 124px;
 
@@ -41,7 +40,7 @@
 
 .statistics__data {
   @include title;
-  padding: 14px 42px 17px;
+  padding: 14px 20px 17px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -50,27 +49,29 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 56px 19px;
+    padding-bottom: 19px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .statistics__definition {
-  position: absolute;
-  top: 47px;
-  left: 50%;
-  transform: translateX(-50%);
   max-width: 77px;
-  margin: 0;
+  margin: -9 auto 0;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    top: 63px;
+    min-width: 134px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $bg-base;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 

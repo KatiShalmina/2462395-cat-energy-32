@@ -6,25 +6,36 @@
       url("../../images/background-cat-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/background-cat-mobile@1x.jpg") type("image/jpeg") 1x,
       url("../../images/background-cat-mobile@2x.jpg") type("image/jpeg") 2x
-    );
+    ),
+    linear-gradient(to right, #4e4e53, #454449);
   background-repeat: no-repeat;
-  background-position: top 0;
+  background-position: center top;
 
   @media (min-width: $tablet-width) {
     background-image: none;
   }
+}
 
+.hero::after {
   @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 50vw;
+    height: 694px;
     background-image:
-      linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
         url("../../images/background-cat-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/background-cat-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/background-cat-desktop@1x.jpg") type("image/jpeg") 1x,
         url("../../images/background-cat-desktop@2x.jpg") type("image/jpeg") 2x
-      );
+      ),
+      linear-gradient(#4d4e52, #4d4e52);
     background-repeat: no-repeat;
-    background-position: center, 193% -110px;
   }
 }
 

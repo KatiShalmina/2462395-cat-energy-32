@@ -1,9 +1,3 @@
-.main-header {
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, $bg-base 50%, rgba(104, 183, 56, 0.85) 50%);
-  }
-}
-
 .main-header__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
