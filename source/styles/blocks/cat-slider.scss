@@ -10,45 +10,78 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  width: 40px;
-  height: 256px;
+  width: 4px;
+  height: 100%;
   padding: 0;
-  color: #666666;
-  background-color: transparent;
+  background-color: #666666;
   border: none;
-  transition: color 0.4s ease;
+  border-radius: 2px;
+  transition: background-color 0.4s ease;
   cursor: pointer;
 
   &:hover,
   &:focus-visible {
-    color: $bg-primary;
+    background-color: $bg-primary;
   }
 
   &:active {
-    color: #9ecc82;
+    background-color: #9ecc82;
   }
+}
+
+.cat-slider__toggle::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $bg-base;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transition: border-color 0.4s ease;
+}
+
+.cat-slider__toggle:hover::before,
+.cat-slider__toggle:focus-visible::before {
+  border-color: $bg-primary;
+}
+
+.cat-slider__toggle:active::before {
+  border-color: #d2e9c3;
+}
+
+.cat-slider__toggle::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#slider-inner-handle");
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: background-color 0.4s ease;
+}
+
+.cat-slider__toggle:hover::after,
+.cat-slider__toggle:focus-visible::after {
+  background-color: $bg-primary;
+}
+
+.cat-slider__toggle:active::after {
+  background-color: #d2e9c3;
 }
 
 .cat-slider__image {
   display: block;
   margin: 0 auto;
-}
-
-.example__fat-cat-wrapper {
-  width: 140px;
-  overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    width: 280px;
-  }
-}
-
-.example__skinny-cat-wrapper {
-  width: 140px;
-
-  @media (min-width: $tablet-width) {
-    width: 280px;
-  }
 }
 
 .cat-slider__image--skinny {
@@ -72,10 +105,3 @@
   }
 }
 
-.cat-slider__curtain {
-  @media (min-width: $tablet-width) {
-    // transform: scaleY(2);
-    width: 40px;
-    height: 512px;
-  }
-}

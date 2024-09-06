@@ -57,3 +57,20 @@
     margin-bottom: 69px;
   }
 }
+
+.example__fat-cat-wrapper {
+  width: 140px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.example__skinny-cat-wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
