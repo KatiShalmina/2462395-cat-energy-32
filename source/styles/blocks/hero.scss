@@ -37,6 +37,10 @@
       linear-gradient(#4d4e52, #424045);
     background-repeat: no-repeat;
   }
+
+  @media (min-width: 2077px) {
+    background-position: right;
+  }
 }
 
 .hero__wrapper {

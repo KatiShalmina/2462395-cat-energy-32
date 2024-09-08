@@ -3,10 +3,11 @@
 }
 
 .page__body {
-  margin: 0;
   display: flex;
   flex-direction: column;
+  min-width: 280px;
   min-height: 100%;
+  margin: 0;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
