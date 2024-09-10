@@ -17,7 +17,6 @@
     linear-gradient(to right, #4e4e53, #454449);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover, contain, cover;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -58,7 +57,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 447px auto;
-    grid-auto-flow: row dense;
+    grid-template-rows: auto auto auto;
+    // grid-auto-flow: row dense;
     place-items: start start;
     max-width: 1220px;
     margin: 0 auto;
@@ -80,7 +80,6 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin-top: 81px;
-    margin-right: -47px;
     margin-left: 80px;
   }
 }
@@ -106,9 +105,10 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-top: 241px;
+    grid-row: 2 / 3;
+    // margin-top: 241px;
     margin-left: 80px;
+    margin-bottom: 52px;
   }
 }
 
@@ -118,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 4;
   }
 }
 
@@ -135,8 +135,8 @@
   @media (min-width: $desktop-width) {
     position: static;
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-top: 313px;
+    grid-row: 3 / 4;
+    // margin-top: 313px;
     margin-left: 80px;
   }
 }
