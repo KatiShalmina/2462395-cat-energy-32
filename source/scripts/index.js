@@ -6,15 +6,11 @@ navMain.classList.remove('main-nav__list--nojs');
 navToggle.classList.remove('main-header__navigation-toggle--nojs');
 
 navToggle.addEventListener('click', () => {
-  if (navMain.classList.contains('main-nav__list--open')) {
+  if (navMain.classList.contains('main-nav__list--open') && navToggle.classList.contains('burger-button--close')) {
     navMain.classList.remove('main-nav__list--open');
-  } else {
-    navMain.classList.add('main-nav__list--open');
-  }
-
-  if (navToggle.classList.contains('burger-button--close')) {
     navToggle.classList.remove('burger-button--close');
   } else {
+    navMain.classList.add('main-nav__list--open');
     navToggle.classList.add('burger-button--close');
   }
 });
