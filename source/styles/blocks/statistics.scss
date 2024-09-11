@@ -12,6 +12,7 @@
 .statistics__list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +26,7 @@
 }
 
 .statistics__item {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   width: 124px;
 
   @media (min-width: $tablet-width) {
@@ -78,21 +79,23 @@
 }
 
 .statistics__data--total {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
   border: none;
 
   @media (min-width: $tablet-width) {
+    align-self: end;
+    flex: none;
     width: 174px;
-    margin-top: 11px;
+    margin: 11px 0 116px;
     font-size: 20px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    align-self: start;
     display: flex;
     justify-content: space-between;
     width: 327px;
