@@ -19,4 +19,3 @@ mainHeaderToggle.addEventListener('click', () => {
   mainHeaderToggle.toggle('burger-button--close');
   mainNavList.toggle('main-nav__list--open');
 });
-
