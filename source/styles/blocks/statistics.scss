@@ -30,12 +30,11 @@
   width: 124px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 104px;
     width: 162px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -89,8 +88,9 @@
     align-self: end;
     flex: none;
     width: 174px;
-    margin: 11px 0 116px;
+    margin: 9 0 116px;
     font-size: 20px;
+    line-height: 29px;
     text-align: right;
   }
 

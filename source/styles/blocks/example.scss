@@ -2,7 +2,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $bg-base 57%, #eaeaea 57%);
+    background-image: linear-gradient(to bottom, $bg-base 56%, #eaeaea 56%);
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,7 @@
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 30px 101px;
+    padding: 17px 30px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
     margin-bottom: 55px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
 }
