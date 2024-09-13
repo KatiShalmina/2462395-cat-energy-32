@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 0 10px;
+    padding: 14px 0 12px;
     font-size: 20px;
     line-height: 30px;
     color: $color-primary;
@@ -81,6 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: 4px;
     background-color: $bg-base;
   }
 }

@@ -1,9 +1,9 @@
 .food-line {
-  padding: 21px 33px 13px 20px;
+  padding: 31px 33px 13px 20px;
   background-color: $bg-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 67px 29px 52px 53px;
+    padding: 78px 29px 52px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,21 +14,19 @@
 
 .food-line__title {
   @include title;
-  margin: 10px 0 29px 70px;
+  margin: 0 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-bottom: 24px;
+    margin: 0 0 24px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 159px;
-    margin-bottom: 73px;
+    margin: 0 0 73px 162px;
   }
 }
 
