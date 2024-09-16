@@ -1,4 +1,4 @@
-.diet__wrapper {
+.diet {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -12,8 +12,6 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
-    max-width: 1220px;
-    margin: 0 auto;
     padding: 82px 0 0;
   }
 }

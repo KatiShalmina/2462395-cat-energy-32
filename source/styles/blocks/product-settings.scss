@@ -18,6 +18,10 @@
     padding: 5px 0;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 0 6px;
+  }
 }
 
 .product-settings__definition {

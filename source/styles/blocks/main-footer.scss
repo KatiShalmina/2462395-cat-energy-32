@@ -14,8 +14,6 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    max-width: 1220px;
-    margin: 0 auto;
     padding: 63px 0;
   }
 }
@@ -43,7 +41,9 @@
   height: 24px;
 }
 
-.main-footer__developer {
+.main-footer__developer-link {
+  margin-right: -5px;
+
   @media (min-width: $tablet-width) {
     margin-left: auto;
   }
