@@ -3,7 +3,7 @@
 }
 
 .main-footer__wrapper {
-  padding: 41px 20px 40px;
+  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -36,7 +36,19 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 128px;
-    height: 24px;
+  }
+}
+
+.main-footer__logo-caption {
+  height: 24px;
+}
+
+.main-footer__developer {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

@@ -30,15 +30,21 @@
   }
 }
 
+.main-header__logo-wrapper--catalog {
+  padding: 15px 20px 12px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
+
 .main-header__logo .logo__caption {
   margin-left: 56px;
 
   @media (min-width: $tablet-width) {
     margin-left: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 14px;
   }
 }
 

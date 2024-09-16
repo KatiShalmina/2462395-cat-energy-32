@@ -1,4 +1,4 @@
-.function {
+.function__wrapper {
   padding: 20px 20px 49px;
 
   @media (min-width: $tablet-width) {
@@ -13,8 +13,7 @@
 }
 
 .function__title {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
@@ -78,10 +77,6 @@
   @media (min-width: $tablet-width) {
     max-width: 245px;
     margin-bottom: 103px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-bottom: 71px;
   }
 }
 

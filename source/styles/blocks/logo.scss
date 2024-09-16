@@ -17,3 +17,11 @@
     height: 21px;
   }
 }
+
+.logo__caption--catalog {
+  height: 20px;
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+  }
+}

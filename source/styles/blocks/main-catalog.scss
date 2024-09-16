@@ -13,11 +13,10 @@
 }
 
 .main-catalog__title {
-  margin: 0 0 41px 20px;
+  margin: 0 0 40px 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-bottom: 84px;
+    margin: 0 0 84px;
   }
 }
 
@@ -34,5 +33,15 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
+  }
+}
+
+.main-catalog__item--show-more {
+  @media (min-width: $tablet-width) {
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
   }
 }

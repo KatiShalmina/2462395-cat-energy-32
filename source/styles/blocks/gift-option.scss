@@ -1,6 +1,6 @@
 .gift-option {
   min-height: 290px;
-  padding: 59px 61px 43px 58px;
+  padding: 58px 61px 43px 58px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -55,7 +55,6 @@
   display: block;
   width: 78px;
   height: 80px;
-  margin: 0 auto 48px;
   background-image: url("../../icons/stack.svg#icon-gift");
   background-repeat: no-repeat;
   background-size: 78px 80px;
@@ -64,13 +63,8 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 83px;
-    margin: 0;
     background-size: 80px 83px;
     background-position: left center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto 46px;
   }
 }
 

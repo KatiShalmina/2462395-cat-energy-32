@@ -5,12 +5,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 18px;
-    margin-left: auto;
     padding: 5px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
   }
 }
 
