@@ -53,12 +53,12 @@
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    width: 632px;
+    width: 640px;
     font-size: 24px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 100%;
   }
 }

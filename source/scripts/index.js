@@ -1,4 +1,3 @@
-/* в этот файл добавляет скрипты*/
 const mainNavList = document.querySelector('.main-nav__list');
 const mainHeaderToggle = document.querySelector('.main-header__navigation-toggle');
 

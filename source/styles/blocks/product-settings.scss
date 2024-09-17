@@ -24,6 +24,14 @@
   }
 }
 
+.product-settings__data {
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+}
+
 .product-settings__definition {
   margin: 0;
   text-align: right;

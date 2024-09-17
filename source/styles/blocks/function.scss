@@ -30,7 +30,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fit, 250px);
     gap: 31px 134px;
-    counter-reset: function;
+    counter-reset: counter;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,21 +69,6 @@
   }
 }
 
-.function__description {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    max-width: 245px;
-    margin-bottom: 103px;
-  }
-}
-
-.function__description br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .function__item::before {
   flex-shrink: 0;
   content: "";
@@ -117,4 +102,19 @@
 .function__item--fast::before {
   background-image: url("../../icons/stack.svg#clock-icon");
   background-size: 27px 31px;
+}
+
+.function__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    margin-bottom: 103px;
+  }
+}
+
+.function__description br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

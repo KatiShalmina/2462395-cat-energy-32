@@ -1,7 +1,7 @@
 .subscription {
   display: flex;
   flex-direction: column;
-  gap: 16;
+  gap: 16px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

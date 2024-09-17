@@ -61,20 +61,17 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 447px auto;
-    grid-template-rows: auto auto auto;
     place-items: start start;
     padding: 29px 0 52px;
   }
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    margin-bottom: 40px;
-    margin-left: 90px;
+    margin: 0 0 40px 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,8 +83,7 @@
 
 .hero__slogan {
   @include title;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -95,8 +91,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
-    margin-left: 90px;
+    margin: 0 0 21px 90px;
     font-size: 20px;
     line-height: 20px;
     color: $color-secondary;
@@ -106,8 +101,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    margin-bottom: 52px;
-    margin-left: 80px;
+    margin: 0 0 52px 80px;
   }
 }
 

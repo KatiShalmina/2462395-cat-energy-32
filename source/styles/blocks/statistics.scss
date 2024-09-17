@@ -13,10 +13,12 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  justify-content: space-between;
+  max-width: 310px;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
+    max-width: none;
     gap: 43px;
   }
 
@@ -97,7 +99,7 @@
   @media (min-width: $desktop-width) {
     align-self: start;
     display: flex;
-    justify-content: space-between;
+    gap: 66px;
     width: 327px;
     margin: 0;
     line-height: 20px;

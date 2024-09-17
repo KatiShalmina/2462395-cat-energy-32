@@ -11,7 +11,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 62px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,10 +20,8 @@
     z-index: 1;
     width: 565px;
     min-height: 199px;
-    margin-top: 95px;
-    margin-bottom: 106px;
-    padding-left: 78px;
-    padding-right: 80px;
+    margin: 95px 0 106px;
+    padding: 60px 78px 60px 80px;
     background-color: $bg-base;
   }
 }
@@ -40,12 +38,13 @@
   @include title("Oswald", 400, #111111);
   width: 140px;
   margin: 0;
+  padding-right: 10px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 163px;
+    width: 180px;
     font-size: 20px;
     line-height: 26px;
   }
